@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Main from './core/Main';
-import { routerReducer } from 'react-router-redux';
 import { createBrowserHistory } from 'history';
 import configureStore from './core/store/configureStore';
 import Home from './core/screens/home/Home';
