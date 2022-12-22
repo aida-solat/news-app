@@ -7,10 +7,10 @@ import { getLatestArticles } from '../service/api';
 function* loadArticles(action: LoadArticleRequest) {
     try {
         yield put(setLoading(true));
-        const articles = yield call(getLatestArticles);
+        const articles:[] = yield call(getLatestArticles);
         yield put(setLoadingFalse());
         yield put(loadArticleSuccess(articles));
-    } catch (e) {
+    } catch (e: any) {
         yield put(setLoadingFalse());
         yield put(loadArticleFailure(e.message));
     }

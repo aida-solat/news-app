@@ -2,22 +2,28 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import '../styles/header.scss';
 
 const Header = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">NORDIC ROSE</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto" defaultActiveKey="/">
-            <Nav.Link href="/">BLOG</Nav.Link>
-            <Nav.Link href="#">ABOUT</Nav.Link>
-            <Nav.Link href="#">LINKS</Nav.Link>
-            <Nav.Link href="#">PROJECTS</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+      <p className="text-left mt-4 mb-4 justify-content-start">NOEDIC ROSE</p>
+      <Nav className="justify-content-end text-uppercase" activeKey="/home">
+        <Nav.Item>
+          <Nav.Link href="/home">Blog</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-1">About</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-2">Links</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link eventKey="link-3">
+            Projects
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
       </Container>
     </Navbar>
   );

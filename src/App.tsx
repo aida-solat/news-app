@@ -4,10 +4,8 @@ import { Provider } from 'react-redux';
 import Main from './core/Main';
 import { createBrowserHistory } from 'history';
 import configureStore from './core/store/configureStore';
-import Home from './core/screens/home/Home';
-import Articles from './core/screens/home/Articles';
-import ArticleDetails from './core/screens/home/ArticleDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './core/screens/Home';
 
 const store = configureStore();
 
@@ -19,11 +17,8 @@ function App() {
     <BrowserRouter>
       <Provider store={store}>
         <Routes>
-          <Route path="/" element={<Home />}>
-            {' '}
-          </Route>
-          <Route path="articles" element={<Articles />} />
-          <Route path="articles/:id" element={<ArticleDetails />} />
+          <Route path="/home" element={<Home />}/>
+          {/* <Route path="articles/:id" element={<ArticleDetails />} /> */}
         </Routes>
       </Provider>
     </BrowserRouter>
