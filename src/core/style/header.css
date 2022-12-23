@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'New York Small';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://fonts.gstatic.com/s/newyorksmall/v1/0n0kC9fUWwq9o9vCqIbBfzRwV49_lSmv.ttf) format('truetype');
+}
+
+.logo{
+  position: absolute;
+    width: 395.83px;
+    height: 37.53px;
+    left: 63.58px;
+    top: 52.54px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+  }
+
+  .nav-container{
+font-family: 'New York Small';
+font-size: 20px;
+font-weight: 500;
+line-height: 34px;
+letter-spacing: 0.12em;
+text-align: center;
+
+  }

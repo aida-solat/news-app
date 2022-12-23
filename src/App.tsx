@@ -7,6 +7,7 @@ import { configureStore } from '@reduxjs/toolkit'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './core/screens/Home';
 import rootReducer from './core/reducers/rootReducer';
+import ArticleDetail from './core/screens/ArticleDetail';
 
 const store = configureStore({
   reducer: rootReducer,
@@ -22,7 +23,7 @@ function App() {
       <Provider store={store}>
         <Routes>
           <Route path="/" element={<Home />}/>
-          {/* <Route path="articles/:id" element={<ArticleDetails />} /> */}
+          <Route path="article/:id" element={<ArticleDetail />} />
         </Routes>
       </Provider>
     </BrowserRouter>

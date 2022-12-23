@@ -1,0 +1,205 @@
+@font-face {
+    font-family: 'New York Extra Large';
+    src: url( 'https://fonts.googleapis.com/css2?family=New+York+Extra+Large&display=swap');
+}
+
+@font-face {
+    font-family: 'SF Mono';
+    src: url( 'https://fonts.googleapis.com/css2?family=SF+Mono&display=swap');
+}
+
+@font-face {
+    font-family: 'SF Pro Text';
+    src: url( 'https://fonts.googleapis.com/css2?family=SF+Pro+Text&display=swap');
+}
+
+@font-face {
+    font-family: 'New York Medium';
+    src: url( 'https://fonts.googleapis.com/css2?family=New+York+Medium&display=swap');
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url( 'https://fonts.googleapis.com/css2?family=SF+Pro+Display&display=swap');
+}
+
+.article-title{
+    position: absolute;
+        width: 858px;
+        height: 162px;
+        left: 291px;
+        top: 186px;
+    
+        font-family: 'New York Extra Large';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 100%;
+        /* or 54px */
+    
+        text-align: center;
+    
+        color: #000000;
+}
+
+.article-description{
+    position: absolute;
+        width: 626px;
+        height: 68px;
+        left: 407px;
+        top: 380px;
+    
+        font-family: 'SF Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 170%;
+        /* or 34px */
+    
+        text-align: center;
+    
+        color: #000000;
+}
+
+.article-image{
+    position: absolute;
+        width: 1440px;
+        height: 900px;
+        left: 0px;
+        top: 500px;
+}
+
+.line{
+    position: absolute;
+        width: 640px;
+        height: 0px;
+        left: 400px;
+        top: 1432px;
+    
+        border: 2px solid #000000;
+}
+
+.author-image{
+    position: absolute;
+        width: 57px;
+        height: 57px;
+        left: 399px;
+        top: 1456px;
+}
+
+.author-name{
+    position: absolute;
+        width: 162px;
+        height: 19px;
+        left: 472px;
+        top: 1461px;
+    
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+    
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    
+        color: #000000;
+}
+
+.published-at{
+    position: absolute;
+        width: 191px;
+        height: 19px;
+        left: 472px;
+        top: 1488px;
+    
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        /* identical to box height */
+    
+    
+        color: #000000;
+}
+
+.vector-container{
+    box-sizing: border-box;
+    
+        position: absolute;
+        width: 140px;
+        height: 44px;
+        right: 400px;
+        top: 1462px;
+    
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+}
+
+.facebook{
+    position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0.21%;
+        bottom: 0.21%;
+    
+        background: #010002;
+}
+
+.tweeter{
+    position: absolute;
+        width: 19.62px;
+        height: 16px;
+        left: 995px;
+        top: 1476px;
+    
+        background: #000000;
+}
+
+.article-content{
+    position: absolute;
+        width: 640px;
+        height: 238px;
+        left: 400px;
+        top: 1565px;
+    
+        font-family: 'New York Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 170%;
+        /* or 34px */
+    
+    
+        color: #000000;
+}
+
+.article-header-second{
+    position: absolute;
+        width: 288px;
+        height: 51px;
+        left: 400px;
+        top: 1860px;
+    
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 160%;
+        /* or 51px */
+    
+    
+        color: #000000;
+}
+
+.article-image-second{
+    position: absolute;
+        width: 854px;
+        height: 570px;
+        left: 293px;
+        top: 2215px;
+}
