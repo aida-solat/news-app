@@ -7,13 +7,10 @@ import { Article } from "../reducers/appReducer";
 
 function Home(props: any) {
   return (
-    <>
+    <div>
       <Header/>
-      <br/>
-      <Container>
-     
-    </Container>
-      </>)}
+      
+      </div>)}
       
 
 
