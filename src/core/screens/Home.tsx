@@ -10,19 +10,20 @@ import ArticleCard from "../components/article";
 import { getArticles } from "../service/api";
 import { loadArticles } from "../actions/appActionCreators";
 import { useEffect, useState } from "react";
+import { useQuery } from "react-query"; 
 import { Link } from "react-router-dom";
 import Footer from "../components/footer";
 
-function Home(props: any) {
-  const [articles, setArticles] = useState<Article[]>([]);
 
-  useEffect(() => {
-    getArticles().then((articles) => {
-      setArticles(articles);
-      
-    });
-  }, []);
-console.log(articles);
+function Home(props: any) {
+  
+
+  const { status, data, isLoading } = useQuery(`articles`, () => getArticles());
+  
+    if (status == `error`) return <p>error</p>;
+    if (status == `loading`) return <p>loading</p>;
+
+  console.log ("data", data)
 
 
   return (
@@ -31,7 +32,7 @@ console.log(articles);
       <Container>
         <Row>
           <Col>
-            <Image src="src/core/assets/images/imageCover.png" className="image-cover" />
+            <Image src={data.imageUrl} className="image-cover" />
           </Col>
 
         </Row>
@@ -58,27 +59,15 @@ console.log(articles);
           </Col>
         </Row>
        
-       
-
-
+    
       </Container>
       <Container>
-         {articles?.map((article) => {
-           return (
-            
-            <div className='articleContainer'>
-              
-                          <ArticleCard key={article?.id} imageUrl={article?.imageUrl} title={article?.title} />
 
-             </div>
-          
-           
-            
-           )
-        }
-       
-          
-        )}
+        <Link to={{`articles/${id}`}}  >
+          <ArticleCard key={data.id} imageurl={data.imageUrl}  />
+        </Link>
+        
+        
       </Container>
       <Footer />
 

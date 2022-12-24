@@ -11,14 +11,14 @@ import "../style/home.css"
 
 function ArticleCard(props: any) {
     return (
-        <div key={props.key}>
+        <Container key={props.key}>
 
-            <img src={props.imageUrl} className="article-regtangle" />
-            <p className="article-title">
+            <Image src={props.imageUrl} className="article-regtangle" />
+            <Form.Text className="article-title">
                 {props.title}
-            </p>
+            </Form.Text>
 
-        </div>)
+        </Container>)
 }
 
 export default ArticleCard;

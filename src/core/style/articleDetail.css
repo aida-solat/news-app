@@ -24,7 +24,7 @@
 }
 
 .article-title{
-    position: absolute;
+      
         width: 858px;
         height: 162px;
         left: 291px;
@@ -39,30 +39,29 @@
     
         text-align: center;
     
-        color: #000000;
-}
+        color: #000000;}
 
-.article-description{
-    position: absolute;
-        width: 626px;
-        height: 68px;
-        left: 407px;
-        top: 380px;
-    
-        font-family: 'SF Mono';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 170%;
-        /* or 34px */
-    
-        text-align: center;
-    
-        color: #000000;
+
+.article-description {
+    width: 626px;
+    height: 68px;
+    font-family: 'SF Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    /* or 34px */
+
+    text-align: center;
+
+    color: #000000;
 }
+   
+        
+
 
 .article-image{
-    position: absolute;
+   
         width: 1440px;
         height: 900px;
         left: 0px;
@@ -70,7 +69,7 @@
 }
 
 .line{
-    position: absolute;
+    
         width: 640px;
         height: 0px;
         left: 400px;
@@ -80,7 +79,7 @@
 }
 
 .author-image{
-    position: absolute;
+      
         width: 57px;
         height: 57px;
         left: 399px;
@@ -88,7 +87,7 @@
 }
 
 .author-name{
-    position: absolute;
+      
         width: 162px;
         height: 19px;
         left: 472px;
@@ -108,7 +107,7 @@
 }
 
 .published-at{
-    position: absolute;
+      
         width: 191px;
         height: 19px;
         left: 472px;
@@ -128,7 +127,7 @@
 .vector-container{
     box-sizing: border-box;
     
-        position: absolute;
+          
         width: 140px;
         height: 44px;
         right: 400px;
@@ -141,7 +140,7 @@
 }
 
 .facebook{
-    position: absolute;
+    
         left: 0%;
         right: 0%;
         top: 0.21%;
@@ -151,7 +150,7 @@
 }
 
 .tweeter{
-    position: absolute;
+    
         width: 19.62px;
         height: 16px;
         left: 995px;
@@ -161,7 +160,7 @@
 }
 
 .article-content{
-    position: absolute;
+      
         width: 640px;
         height: 238px;
         left: 400px;
@@ -179,7 +178,7 @@
 }
 
 .article-header-second{
-    position: absolute;
+      
         width: 288px;
         height: 51px;
         left: 400px;
@@ -197,7 +196,7 @@
 }
 
 .article-image-second{
-    position: absolute;
+      
         width: 854px;
         height: 570px;
         left: 293px;

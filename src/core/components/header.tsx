@@ -14,10 +14,9 @@ const Header = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container >
-
         <Navbar.Brand href="#home">
           <img
-            src="src/core/assets/images/NORDICROSE.png"
+            src={require('../assets/images/NORDICROSE.png')}
             className="logo mt-4 mb-4 justify-content-start"
             alt="logo"
           />
@@ -45,6 +44,10 @@ const Header = () => {
         </Form>
 
         <Nav className="justify-content-end text-uppercase nav-container" activeKey="/home">
+
+        
+
+
           <Nav.Item>
             <Nav.Link href="/home">Blog</Nav.Link>
           </Nav.Item>

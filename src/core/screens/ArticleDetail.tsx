@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { useQuery } from '@apollo/client';  
+import { useQuery } from "react-query"; 
 import { getArticleById } from '../service/api';
 import Loading from '../components/loading';
 import Error from '../components/error';
@@ -15,7 +15,8 @@ import Col from 'react-bootstrap/Col';
 
 import Form from 'react-bootstrap/Form';
 import "../style/articleDetail.css"
-import { promises } from 'stream';
+import Footer from '../components/footer';
+
 
 
 
@@ -23,16 +24,17 @@ import { promises } from 'stream';
 function ArticleDetail() {
     const { id } = useParams<{ id: string }>();
 
-    const { loading, error, data } = useQuery( getArticleById , {
-        variables: { id: id },
-    });
-
-    if (loading) return <Loading />;
-    if (error) return <Error />;
-    console.log(data);
-
-
    
+    
+    const { status, data, isLoading } = useQuery(`article-${id}`, () => getArticleById(id!));
+
+    if (status == `error`) return <p>error</p>;
+    if (status == `loading`) return <p>loading</p>;
+
+    console.log('article detail data',data);
+
+  
+  
   return (
       <>
           <Header />
@@ -40,20 +42,20 @@ function ArticleDetail() {
               <Row>
                   <Col>   
                       <Form.Text className="article-title">
-                  A few words about this blog platform, Ghost, and how this site was made
+                  {data.title}
                       </Form.Text>
                     </Col>
               </Row>
               <Row>
                   <Col>
                       <Form.Text className="article-description">
-                          Why Ghost (& Figma) instead of Medium, WordPress or other options?
+                            {data.summary}
                       </Form.Text>
                   </Col>
               </Row>
               <Row>
                   <Col>
-                      <Image src={data.article.imageUrl} className="article-image" />
+                      <Image src={data.imageUrl} className="article-image" />
                   </Col>
                   
               </Row>
@@ -62,11 +64,14 @@ function ArticleDetail() {
                   <Col>
                       <Image src="src/core/assets/images/author.png" className="author-image" />
                       <Form.Text className="author-name">
-                          {data.article.author.name}
+                          author name
                       </Form.Text>
                       <Form.Text className="published-at">
-                          {data.article.publishedAt}
+                          {data.publishedAt}
                       </Form.Text>
+                      <Form.Text className="read-time">
+                          {data.readTime}
+                        </Form.Text>
                   </Col>
                   <Col>
                       <Container className='vector-container'>
@@ -87,12 +92,12 @@ function ArticleDetail() {
               </Row>
               <Row>
                   <Form.Text className="article-content">
-                      {data.article.content}
+                      {data.summary}
                     </Form.Text>
               </Row>
               <Row>
                   <Form.Text className="article-header-second">
-                      Next on the pipeline
+                      {data.newsSite}
                     </Form.Text>
               </Row>
               <Row>
@@ -103,7 +108,7 @@ function ArticleDetail() {
                   </Form.Text>
               </Row>
               <Row>
-                  <Image src={data.article.imageUrl} className="article-image-second" />
+                  <Image src={data.imageUrl} className="article-image-second" />
               </Row>
               <Row>
                   <Form.Text className="image-caption">
@@ -146,8 +151,10 @@ function ArticleDetail() {
               
 
           </Container>
+          <Footer/>
       </>
   );
+
 }
 
 export default ArticleDetail;

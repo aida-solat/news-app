@@ -1,0 +1,52 @@
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Ubuntu';
+}
+
+.footer marquee {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+}
+
+.footer span {
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+.footer .logo {
+    font-family: 'Source Serif 4', 'Ubuntu';
+    letter-spacing: 6px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.footer a {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.footer a:hover {
+    color: seagreen;
+}
+
+.links {
+    margin: 30px;
+}
+
+.footer p {
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+}
+
+.footer .copyright {
+    padding-bottom: 3rem;
+}
