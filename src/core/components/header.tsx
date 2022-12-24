@@ -12,18 +12,20 @@ const Header = () => {
 
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Container >
-        <Navbar.Brand href="#home">
-          <img
+    <Navbar bg="light" expand="lg" >
+      <Container className='flex fluid space-between ' >
+        <Navbar.Brand href="/">
+          <Image
             src={require('../assets/images/NORDICROSE.png')}
-            className="logo mt-4 mb-4 justify-content-start"
-            alt="logo"
+            className="logo justify-content-start"
+            
           />
         </Navbar.Brand>
+        
 
 
         <Form className="d-flex">
+          
           <Form.Control
             type="search"
             placeholder="Search"
@@ -45,7 +47,7 @@ const Header = () => {
 
         <Nav className="justify-content-end text-uppercase nav-container" activeKey="/home">
 
-        
+
 
 
           <Nav.Item>

@@ -29,44 +29,50 @@ function Home(props: any) {
   return (
     <>
       <Header />
-      <Container>
+      <Container className="justify-center flex fluid relative">
         <Row>
-          <Col>
+          
             <Image src={data.imageUrl} className="image-cover" />
-          </Col>
+          
 
         </Row>
         <Row>
-          <Col>
+          
             <Form.Text className="first-description">
               A few words about this blog platform, Ghost, and how this site was made
             </Form.Text>
-          </Col>
+          
         </Row>
         <Row>
-          <Col>
+          
             <Form.Text className="second-description">
               Why Ghost (& Figma) instead of Medium, WordPress or other options?
             </Form.Text>
-          </Col>
+        
         </Row>
         <hr className="line" />
         <Row>
-          <Col>
+          
             <Form.Text className="all-articles">
               All articles
             </Form.Text>
-          </Col>
+          
         </Row>
        
     
       </Container>
-      <Container>
-
-        <Link to={{`articles/${id}`}}  >
-          <ArticleCard key={data.id} imageurl={data.imageUrl}  />
-        </Link>
+      <Container className="articles-container grid col col-8 m-20 relative">
         
+        {data.map((data: Article) => (
+          <Link to={
+            
+            { pathname: `/articles/${data.id}` }
+          }   >
+            <ArticleCard key={data.id} imageurl={data.imageUrl} title={data.title}  />
+          </Link>
+
+        ))}
+
         
       </Container>
       <Footer />

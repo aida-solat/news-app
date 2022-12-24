@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 @font-face {
@@ -16,21 +17,38 @@
 
 }
 
-.image-cover{
-    width: 854px;
-    height: 533px;
-    margin: auto;
-    background: url(../assets/images/imageCover.png);
-    justify-content: center;
-    display: inline;
+@font-face {
+    font-family: "SF Pro Text";
+    src: url("https://www.fontsquirrel.com/fonts/download/SF%20Pro%20Text") format("truetype");
+
 }
 
-.first-description{
-     
+@font-face {
+    font-family: "New York Medium";
+    src: url("https://www.fontsquirrel.com/fonts/download/New%20York%20Medium") format("truetype");
+
+}
+
+@font-face {
+    font-family: "SF Pro Display";
+    src: url("https://www.fontsquirrel.com/fonts/download/SF%20Pro%20Display") format("truetype");
+
+}
+
+.image-cover {
+    width: 854px;
+    height: 533px;
+    background: url(../assets/images/imageCover.png);
+    background-position: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.first-description {
+
     width: 858px;
     height: 162px;
-    left: 293px;
-    top: 787px;   
     font-family: 'New York Extra Large';
     font-style: normal;
     font-weight: 700;
@@ -38,91 +56,97 @@
     line-height: 100%;
     text-align: center;
     color: #000000;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+.article-regtangle {
+    width: 304px;
+    height: 176px;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
+}
+
+
+
+.second-description {
+    width: 592px;
+    height: 68px;
+    font-family: 'SF Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    text-align: center;
+    color: #000000;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
+
 
 }
 
-.article-regtangle{
-width: 304px;
-height: 176px;
-
-background: #f6f6f6;
+.line {
+    width: 640px;
+    height: 0;
+    border: 2px solid #000000;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
 }
 
-
-
-.second-description{
-     
-width: 592px;
-height: 68px;
-left: 424px;
-top: 981px;
-
-font-family: 'SF Mono';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 170%;
-/* or 34px */
-
-text-align: center;
-
-color: #000000;
-}
-
-.line{
-     
-width: 640px;
-height: 0px;
-left: 400px;
-top: 1083px;
-
-border: 2px solid #000000;
-}
-
-.all-articles{
-     
-width: 225px;
-height: 53px;
-left: 608px;
-top: 1147px;
-
-font-family: 'New York Extra Large';
-font-style: normal;
-font-weight: 700;
-font-size: 44px;
-line-height: 53px;
-/* identical to box height */
-
-text-align: center;
-white-space: nowrap;    
-
-color: #000000;
+.all-articles {
+    width: 225px;
+    height: 53px;
+    font-family: 'New York Extra Large';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    white-space: nowrap;
+    color: #000000;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
 }
 
 .article-title{
-
-width: 262px;
-height: 78px;
-
-
-font-family: 'SF Pro Display';
-font-style: normal;
-font-weight: 500;
-font-size: 22px;
-line-height: 120%;
-/* or 26px */
-
-text-align: center;
-
-color: #000000;
+    font-family: "SF Pro Display";
+        font-size: 12px;
+        text-align: center;
 
 }
 
-.articleContainer{
-    display: flex;
+
+.articles-container{
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+margin: auto;
+    padding: 10px;
+    align-items: baseline;
+    justify-content: center;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-self: center;
+    
+
 
 }
-.articleContainer img {
-    width: 100px;
-    height: 100px;
+
+.article-reg-title{
+    font-family: "SF Pro Display";
+    font-size: 12px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 5%;
 }
