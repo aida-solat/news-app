@@ -67,8 +67,34 @@
     margin: auto;
     padding: 10px;
     margin-bottom: 5%;
+    margin-top: 2%;
 }
 
+.card-title {
+    color: #000000;
+    text-decoration: none;
+}
+
+.card-text {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.button-card {
+    top: 350px;
+    right: 200px;
+    position: absolute;
+}
+
+.link-article-card {
+    color: #000000;
+    text-decoration: none;
+}
 
 
 .second-description {
@@ -90,10 +116,9 @@
 
 .line {
     width: 640px;
-    height: 0;
-    border: 2px solid #000000;
+    size: 1px;
+    color: #000000;
     margin: auto;
-    padding: 10px;
     margin-bottom: 5%;
 }
 
@@ -113,20 +138,20 @@
     margin-bottom: 5%;
 }
 
-.article-title{
+.article-title {
     font-family: "SF Pro Display";
-        font-size: 12px;
-        text-align: center;
+    font-size: 12px;
+    text-align: center;
 
 }
 
 
-.articles-container{
-    
+.articles-container {
+
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
-margin: auto;
+    margin: auto;
     padding: 10px;
     align-items: baseline;
     justify-content: center;
@@ -137,12 +162,12 @@ margin: auto;
     justify-items: center;
     justify-self: center;
     align-self: center;
-    
+
 
 
 }
 
-.article-reg-title{
+.article-reg-title {
     font-family: "SF Pro Display";
     font-size: 12px;
     text-align: center;
