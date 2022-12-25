@@ -147,6 +147,9 @@ function ArticleDetail() {
           </Row>
         </Container>
       </Container>
+      <Row>
+        <Form.Text className='all-articles'>More Articles</Form.Text>
+      </Row>
       <Container className='articles-container-three grid col col-6 relative'>
         {data2 &&
           data2.map((data2: Article) => (
