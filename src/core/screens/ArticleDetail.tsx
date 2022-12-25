@@ -2,15 +2,11 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "react-query";
 import { getArticleById, getArticles } from "../service/api";
-import Loading from "../components/loading";
-import Error from "../components/error";
-
 import Header from "../components/header";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
 import Form from "react-bootstrap/Form";
 import "../style/articleDetail.css";
 import Footer from "../components/footer";
