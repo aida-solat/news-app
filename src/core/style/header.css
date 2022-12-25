@@ -2,7 +2,7 @@
   font-family: 'New York Small';
   font-style: normal;
   font-weight: 500;
-  src: url(https://fonts.gstatic.com/s/newyorksmall/v1/0n0kC9fUWwq9o9vCqIbBfzRwV49_lSmv.ttf) format('truetype');
+  src: url("../fonts/the-challange-fonts/NewYork/NewYorkSmall-Regular.ttf") format('truetype');
 }
 
 .logo{

@@ -25,7 +25,7 @@ function Home(props: any) {
   return (
     <>
       <Header />
-      <Container className='justify-center flex fluid relative'>
+      <Container className='justify-center flex fluid col col-8 relative'>
         <Row>
           <Image src={data.imageUrl} className='image-cover' />
         </Row>
@@ -40,26 +40,27 @@ function Home(props: any) {
             Why Ghost (& Figma) instead of Medium, WordPress or other options?
           </Form.Text>
         </Row>
-        <hr className='line' />
+        <hr />
         <Row>
           <Form.Text className='all-articles'>All articles</Form.Text>
         </Row>
       </Container>
       <Container className='articles-container grid col col-8 relative'>
-        {data.map((data: Article) => (
-          <Link
-            to={{ pathname: `/articles/${data?.id}` }}
-            className='link-article-card'
-          >
-            <ArticleCard
-              key={data?.id}
-              imageurl={data?.imageUrl}
-              title={data?.title}
-              text={data?.summary}
-              bottonTitle='Read more'
-            />
-          </Link>
-        ))}
+        {data &&
+          data.map((data: Article) => (
+            <Link
+              to={{ pathname: `/articles/${data?.id}` }}
+              className='link-article-card'
+              key={data.id}
+            >
+              <ArticleCard
+                imageurl={data?.imageUrl}
+                title={data.title}
+                text={data.summary}
+                bottonTitle='Read more'
+              />
+            </Link>
+          ))}
       </Container>
       <Footer />
     </>

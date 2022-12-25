@@ -11,7 +11,7 @@ import { Article } from "../reducers/appReducer";
 
 const Header = () => {
   return (
-    <Navbar bg='light' expand='lg'>
+    <Navbar bg='light' expand='lg' fixed='top'>
       <Container className='flex fluid space-between '>
         <Navbar.Brand href='/'>
           <Image

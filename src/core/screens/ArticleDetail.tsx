@@ -38,7 +38,7 @@ function ArticleDetail() {
   return (
     <>
       <Header />
-      <Container className='justify-center flex fluid relative  '>
+      <Container className='justify-center flex fluid relative '>
         <Row>
           <Form.Text className='article-title'>{data.title}</Form.Text>
         </Row>
@@ -48,8 +48,9 @@ function ArticleDetail() {
         <Row>
           <Image src={data.imageUrl} className='article-image' />
         </Row>
-        <hr className='line' />
-        <Container className=' content-center grid col col-6'>
+
+        <Container className='relative grid col col-8'>
+          <hr />
           <Row>
             <Col>
               <Image
@@ -151,20 +152,21 @@ function ArticleDetail() {
         </Container>
       </Container>
       <Container className='articles-container-three grid col col-6 relative'>
-        {data2?.map((data2: Article) => (
-          <Link
-            className='link-article-card'
-            to={{ pathname: `/articles/${data2.id}` }}
-          >
-            <ArticleCard
+        {data2 &&
+          data2.map((data2: Article) => (
+            <Link
+              className='link-article-card'
+              to={{ pathname: `/articles/${data2.id}` }}
               key={data2.id}
-              imageurl={data2.imageUrl}
-              title={data2.title}
-              text={data2.summary}
-              bottonTitle='Read more'
-            />
-          </Link>
-        ))}
+            >
+              <ArticleCard
+                imageurl={data2.imageUrl}
+                title={data2.title}
+                text={data2.summary}
+                bottonTitle='Read more'
+              />
+            </Link>
+          ))}
       </Container>
       <Footer />
     </>

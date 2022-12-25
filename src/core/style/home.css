@@ -7,31 +7,31 @@
 
 @font-face {
     font-family: "New York Extra Large";
-    src: url("https://www.fontsquirrel.com/fonts/download/New%20York%20Extra%20Large") format("truetype");
+    src: url("../fonts/the-challange-fonts/NewYork/NewYorkExtraLarge-Black.ttf") format("truetype");
 
 }
 
 @font-face {
     font-family: "SF Mono";
-    src: url("https://www.fontsquirrel.com/fonts/download/SF%20Mono") format("truetype");
+    src: url("../fonts/the-challange-fonts/SF\ Mono/SFMonoRegular.woff") format("truetype");
 
 }
 
 @font-face {
     font-family: "SF Pro Text";
-    src: url("https://www.fontsquirrel.com/fonts/download/SF%20Pro%20Text") format("truetype");
+    src: url("../fonts/the-challange-fonts/SF\ Text/SF-Pro-Text-Regular.otf") format("truetype");
 
 }
 
 @font-face {
     font-family: "New York Medium";
-    src: url("https://www.fontsquirrel.com/fonts/download/New%20York%20Medium") format("truetype");
+    src: url("../fonts/the-challange-fonts/NewYork/NewYorkMedium-Medium.ttf") format("truetype");
 
 }
 
 @font-face {
     font-family: "SF Pro Display";
-    src: url("https://www.fontsquirrel.com/fonts/download/SF%20Pro%20Display") format("truetype");
+    src: url("../fonts/the-challange-fonts/SF\ Pro\ Display/SFPRODISPLAYREGULAR.OTF") format("truetype");
 
 }
 
@@ -42,7 +42,7 @@
     background-position: center;
     margin: auto;
     padding: 10px;
-    margin-bottom: 5%;
+    margin-top: 100px;
 }
 
 .first-description {
@@ -114,13 +114,6 @@
 
 }
 
-.line {
-    width: 640px;
-    size: 1px;
-    color: #000000;
-    margin: auto;
-    margin-bottom: 5%;
-}
 
 .all-articles {
     width: 225px;
