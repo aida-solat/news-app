@@ -53,10 +53,10 @@ function ArticleDetail() {
           </Col>
         </Row>
 
-        <Container className='relative grid col col-6'>
+        <Container className='relative grid col col-6 middle-container'>
           <hr />
           <Row>
-            <Col sm={8}>
+            <Col>
               <Image
                 src='src/core/assets/images/author.png'
                 className='author-image'
@@ -86,7 +86,7 @@ function ArticleDetail() {
             </Col>
           </Row>
         </Container>
-        <Container className='content-center grid col col-6 relative'>
+        <Container className='content-center grid col col-6 relative middle-container'>
           <Row>
             <Col>
               <Form.Text className='article-description'>
@@ -178,22 +178,24 @@ function ArticleDetail() {
       <Row>
         <Form.Text className='all-articles'>More Articles</Form.Text>
       </Row>
-      <Container className='articles-container-three grid col col-12 relative'>
-        {data2 &&
-          data2.map((data2: Article) => (
-            <Link
-              className='link-article-card'
-              to={{ pathname: `/articles/${data2.id}` }}
-              key={data2.id}
-            >
-              <ArticleCard
-                imageurl={data2.imageUrl}
-                title={data2.title}
-                text={data2.summary}
-                bottonTitle='Read more'
-              />
-            </Link>
-          ))}
+      <Container className='articles-container-three grid col-8'>
+        <Row xs={1} lg={3}>
+          {data2 &&
+            data2.map((data2: Article) => (
+              <Link
+                className='link-article-card'
+                to={{ pathname: `/articles/${data2.id}` }}
+                key={data2.id}
+              >
+                <ArticleCard
+                  imageurl={data2.imageUrl}
+                  title={data2.title}
+                  text={data2.summary}
+                  bottonTitle='Read more'
+                />
+              </Link>
+            ))}
+        </Row>
       </Container>
       <Footer />
     </>

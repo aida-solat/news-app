@@ -8,8 +8,6 @@ import Form from "react-bootstrap/Form";
 import "../style/home.css";
 import ArticleCard from "../components/article";
 import { getArticles } from "../service/api";
-import { loadArticles } from "../actions/appActionCreators";
-import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
 import Footer from "../components/footer";
