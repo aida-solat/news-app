@@ -56,12 +56,12 @@ function Home(props: any) {
           {data &&
             data.map((data: Article) => (
               <Link
-                to={{ pathname: `/articles/${data?.id}` }}
+                to={{ pathname: `/articles/${data.id}` }}
                 className='link-article-card'
                 key={data.id}
               >
                 <ArticleCard
-                  imageurl={data?.imageUrl}
+                  imageurl={data.imageUrl}
                   title={data.title}
                   text={data.summary}
                   bottonTitle='Read more'

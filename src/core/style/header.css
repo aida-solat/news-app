@@ -6,13 +6,12 @@
 }
 
 .logo{
-    width: 350px;
+    width: 300px;
     height: 40px;
-    top: 65px;
+    margin: auto;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    text-align: center;
+    margin-left: 10px;
 
 }
 
