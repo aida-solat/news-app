@@ -178,7 +178,7 @@ function ArticleDetail() {
       <Row>
         <Form.Text className='all-articles'>More Articles</Form.Text>
       </Row>
-      <Container className='articles-container-three grid col-8'>
+      <Container className='articles-container-three grid col-6'>
         <Row xs={1} lg={3}>
           {data2 &&
             data2.map((data2: Article) => (

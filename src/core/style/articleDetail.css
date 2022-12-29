@@ -242,15 +242,14 @@
         }
 }
 
+
 .articles-container-three {
-        width: 100%;
         grid-gap: 20px;
         margin: auto;
         display: grid;
         align-items: center;
         justify-content: center;
-        ;
-     
+        margin-bottom: 10px;
 
 
 }

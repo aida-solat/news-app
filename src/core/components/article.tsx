@@ -5,16 +5,7 @@ import Button from "react-bootstrap/Button";
 
 function ArticleCard(props: any) {
   return (
-    <Card
-      style={{
-        width: "20rem",
-        marginBottom: "10px",
-        height: "410px",
-        alignItems: "center",
-        justifyContent: "center",
-        display: "flex",
-      }}
-    >
+    <Card style={{ width: "20rem", marginBottom: "20px", height: "410px" }}>
       <Card.Img
         variant='top'
         src={props.imageUrl}
