@@ -25,7 +25,7 @@ function Home(props: any) {
   return (
     <>
       <Header />
-      <Container className='justify-center item-center flex fluid col col-6 relative'>
+      <Container className='justify-center flex fluid col-6 relative top-container'>
         <Row>
           <Col>
             <Image src={data.imageUrl} className='image-cover' />
@@ -53,22 +53,24 @@ function Home(props: any) {
           </Col>
         </Row>
       </Container>
-      <Container className='articles-container grid col col-6 relative'>
-        {data &&
-          data.map((data: Article) => (
-            <Link
-              to={{ pathname: `/articles/${data?.id}` }}
-              className='link-article-card'
-              key={data.id}
-            >
-              <ArticleCard
-                imageurl={data?.imageUrl}
-                title={data.title}
-                text={data.summary}
-                bottonTitle='Read more'
-              />
-            </Link>
-          ))}
+      <Container className='articles-container grid col-6 '>
+        <Row xs={1} lg={2}>
+          {data &&
+            data.map((data: Article) => (
+              <Link
+                to={{ pathname: `/articles/${data?.id}` }}
+                className='link-article-card'
+                key={data.id}
+              >
+                <ArticleCard
+                  imageurl={data?.imageUrl}
+                  title={data.title}
+                  text={data.summary}
+                  bottonTitle='Read more'
+                />
+              </Link>
+            ))}
+        </Row>
       </Container>
       <Footer />
     </>
