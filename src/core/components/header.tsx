@@ -9,9 +9,15 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 const Header = () => {
   return (
     <>
-      {[false, "sm", "md"].map((expand) => (
-        <Navbar bg='light' expand={expand} className='mb-3' fixed='top'>
-          <Container space-between fluid>
+      {[false, "sm", "md"].map((expand, key) => (
+        <Navbar
+          key={key}
+          bg='light'
+          expand={expand}
+          className='mb-3'
+          fixed='top'
+        >
+          <Container fluid>
             <Navbar.Brand href='/'>
               <Image
                 src={require("../assets/images/NORDICROSE.png")}
