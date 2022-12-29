@@ -36,7 +36,7 @@
 }
 
 .image-cover {
-    width: 854px;
+    width: 100%;
     height: 533px;
     background: url(../assets/images/imageCover.png);
     background-position: center;
@@ -46,26 +46,25 @@
 }
 
 .first-description {
-
-    width: 858px;
-    height: 162px;
     font-family: 'New York Extra Large';
     font-style: normal;
     font-weight: 700;
-    font-size: 54px;
+    font-size: 34px;
     line-height: 100%;
     text-align: center;
     color: #000000;
     margin: auto;
     padding: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .article-regtangle {
     width: 304px;
     height: 176px;
     margin: auto;
-    padding: 10px;
     margin-bottom: 5%;
     margin-top: 2%;
 }
@@ -79,7 +78,7 @@
     color: #000000;
     text-decoration: none;
     display: inline-block;
-    width: 280px;
+    width: 260px;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
@@ -98,8 +97,6 @@
 
 
 .second-description {
-    width: 592px;
-    height: 68px;
     font-family: 'SF Mono';
     font-style: normal;
     font-weight: 400;
@@ -108,27 +105,28 @@
     text-align: center;
     color: #000000;
     margin: auto;
-    padding: 10px;
     margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 
 
 }
 
 
 .all-articles {
-    width: 225px;
-    height: 53px;
     font-family: 'New York Extra Large';
     font-style: normal;
     font-weight: 700;
-    font-size: 44px;
-    line-height: 53px;
+    font-size: 34px;
     text-align: center;
     white-space: nowrap;
     color: #000000;
     margin: auto;
-    padding: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .article-title {
@@ -140,24 +138,17 @@
 
 
 .articles-container {
-
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 10px;
     margin: auto;
     padding: 10px;
     align-items: baseline;
-    justify-content: center;
     display: grid;
-    flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
     justify-items: center;
     justify-self: center;
     align-self: center;
-
-
-
 }
 
 .article-reg-title {

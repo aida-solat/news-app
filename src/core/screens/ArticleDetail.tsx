@@ -34,21 +34,29 @@ function ArticleDetail() {
   return (
     <>
       <Header />
-      <Container className='justify-center flex fluid relative '>
+      <Container className='justify-center flex fluid relative'>
         <Row>
-          <Form.Text className='article-title'>{data.title}</Form.Text>
+          <Col>
+            <Form.Text className='article-title'>{data.title}</Form.Text>
+          </Col>
         </Row>
         <Row>
-          <Form.Text className='article-description'>{data.summary}</Form.Text>
+          <Col>
+            <Form.Text className='article-description'>
+              {data.summary}
+            </Form.Text>
+          </Col>
         </Row>
         <Row>
-          <Image src={data.imageUrl} className='article-image' />
+          <Col>
+            <Image src={data.imageUrl} className='article-image' />
+          </Col>
         </Row>
 
-        <Container className='relative grid col col-8'>
+        <Container className='relative grid col col-6'>
           <hr />
           <Row>
-            <Col>
+            <Col sm={8}>
               <Image
                 src='src/core/assets/images/author.png'
                 className='author-image'
@@ -58,7 +66,7 @@ function ArticleDetail() {
               <Form.Text className='published-at'>{data.publishedAt}</Form.Text>
               <Form.Text className='read-time'>{data.readTime}</Form.Text>
             </Col>
-            <Col>
+            <Col sm={4}>
               <Container className='vector-container'>
                 <Row>
                   <Col>
@@ -78,79 +86,99 @@ function ArticleDetail() {
             </Col>
           </Row>
         </Container>
-        <Container className='content-center grid col col-8 m-20 relative'>
+        <Container className='content-center grid col col-6 relative'>
           <Row>
-            <Form.Text className='article-description'>
-              {data.summary}
-            </Form.Text>
+            <Col>
+              <Form.Text className='article-description'>
+                {data.summary}
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='article-header-second'>
-              {data.newsSite}
-            </Form.Text>
+            <Col>
+              <Form.Text className='article-header-second'>
+                {data.newsSite}
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='article-description'>
-              Duis eu velit tempus erat egestas efficitur. In hac habitasse
-              platea dictumst. Fusce a nunc eget ligula suscipit finibus. Aenean
-              pharetra quis lacus at viverra. Class aptent taciti sociosqu ad
-              litora torquent per conubia nostra, per inceptos himenaeos. Morbi
-              efficitur auctor metus, id mollis lorem pellentesque id. Nullam
-              posuere maximus dui et fringilla.
-            </Form.Text>
+            <Col>
+              <Form.Text className='article-description'>
+                Duis eu velit tempus erat egestas efficitur. In hac habitasse
+                platea dictumst. Fusce a nunc eget ligula suscipit finibus.
+                Aenean pharetra quis lacus at viverra. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Morbi efficitur auctor metus, id mollis lorem
+                pellentesque id. Nullam posuere maximus dui et fringilla.
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Image src={data.imageUrl} className='article-image-second' />
+            <Col>
+              <Image src={data.imageUrl} className='article-image-second' />
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='image-caption'>
-              Image caption centered this way and I’ll make this a bit longer to
-              indicate the amount of line-height.
-            </Form.Text>
+            <Col>
+              <Form.Text className='image-caption'>
+                Image caption centered this way and I’ll make this a bit longer
+                to indicate the amount of line-height.
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='article-desc-third'>
-              Aenean pharetra quis lacus at viverra. Class aptent taciti
-              sociosqu ad litora torquent per conubia nostra, per inceptos
-              himenaeos. Aliquam quis posuere ligula. In eu dui molestie,
-              molestie lectus eu, semper lectus. Proin at justo lacinia, auctor
-              nisl et, consequat ante. Donec sit amet nisi arcu. Morbi efficitur
-              auctor metus, id mollis lorem pellentesque id. Nullam posuere
-              maximus dui et fringilla. Nulla non volutpat leo.
-            </Form.Text>
+            <Col>
+              <Form.Text className='article-desc-third'>
+                Aenean pharetra quis lacus at viverra. Class aptent taciti
+                sociosqu ad litora torquent per conubia nostra, per inceptos
+                himenaeos. Aliquam quis posuere ligula. In eu dui molestie,
+                molestie lectus eu, semper lectus. Proin at justo lacinia,
+                auctor nisl et, consequat ante. Donec sit amet nisi arcu. Morbi
+                efficitur auctor metus, id mollis lorem pellentesque id. Nullam
+                posuere maximus dui et fringilla. Nulla non volutpat leo.
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='article-header-third'>
-              A list looks like this:
-            </Form.Text>
+            <Col>
+              <Form.Text className='article-header-third'>
+                A list looks like this:
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='article-list'>
-              <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-              </ul>
-            </Form.Text>
+            <Col>
+              <Form.Text className='article-list'>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='last-desc'>
-              Class aptent taciti sociosqu ad litora torquent per conubia
-              nostra, per inceptos himenaeos. Aliquam quis posuere ligula.
-            </Form.Text>
+            <Col>
+              <Form.Text className='last-desc'>
+                Class aptent taciti sociosqu ad litora torquent per conubia
+                nostra, per inceptos himenaeos. Aliquam quis posuere ligula.
+              </Form.Text>
+            </Col>
           </Row>
           <Row>
-            <Form.Text className='regards'>
-              Thanks for reading, <br />
-              Mika
-            </Form.Text>
+            <Col>
+              <Form.Text className='regards'>
+                Thanks for reading, <br />
+                Mika
+              </Form.Text>
+            </Col>
           </Row>
         </Container>
       </Container>
       <Row>
         <Form.Text className='all-articles'>More Articles</Form.Text>
       </Row>
-      <Container className='articles-container-three grid col col-6 relative'>
+      <Container className='articles-container-three grid col col-12 relative sm'>
         {data2 &&
           data2.map((data2: Article) => (
             <Link
