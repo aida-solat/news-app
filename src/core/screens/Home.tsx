@@ -61,7 +61,7 @@ function Home(props: any) {
                 key={data.id}
               >
                 <ArticleCard
-                  imageurl={data.imageUrl}
+                  imageurl={data?.imageUrl}
                   title={data.title}
                   text={data.summary}
                   bottonTitle='Read more'

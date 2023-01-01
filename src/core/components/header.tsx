@@ -18,7 +18,7 @@ const Header = () => {
           fixed='top'
         >
           <Container fluid>
-            <Navbar.Brand href='/'>
+            <Navbar.Brand href='/news-app'>
               <Image
                 src={require("../assets/images/NORDICROSE.png")}
                 className='logo justify-content-start'

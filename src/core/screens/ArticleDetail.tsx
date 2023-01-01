@@ -188,7 +188,7 @@ function ArticleDetail() {
                 key={data2.id}
               >
                 <ArticleCard
-                  imageurl={data2.imageUrl}
+                  imageurl={data2?.imageUrl}
                   title={data2.title}
                   text={data2.summary}
                   bottonTitle='Read more'

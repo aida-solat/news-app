@@ -8,12 +8,7 @@ export const getArticles = async () => {
     const data = await response.json();
     return data;
 };
-//Spaceflight News API - Latest Articles
-export const getLatestArticles = async () => {
-    const response = await fetch(`${API_URL}/latest`);
-    const data = await response.json();
-    return data;
-}
+
 
 //Spaceflight News API - Article by ID
 export const getArticleById = async (id: string) => {

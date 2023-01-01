@@ -25,7 +25,7 @@ function App() {
       <Provider store={store}>
         <QueryClientProvider client={queryClient}>
           <Routes>
-            <Route path='/' element={<Home />} />
+            <Route path='/news-app' element={<Home />} />
             <Route path='articles/:id' element={<ArticleDetail />} />
           </Routes>
         </QueryClientProvider>
