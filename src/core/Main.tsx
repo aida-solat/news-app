@@ -1,7 +1,7 @@
-import { connect, Provider } from 'react-redux';
-import React, { Dispatch } from 'react';
-import { AppState } from './reducers/rootReducer';
-import { loadArticles, setLoading } from './actions/appActionCreators';
+import { connect, Provider } from "react-redux";
+import React, { Dispatch } from "react";
+import { AppState } from "./reducers/rootReducer";
+import { loadArticles, setLoading } from "./actions/appActions";
 
 const mapStateToProps = (state: AppState) => {
   return {
